@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<head>
+	<meta charset="UTF-8">
+	<title>Glamour</title>
+	<style>
+	body {
+		background-color: white;
+		color: black;
+	}
+	h2{
+		margin-bottom: 0px;
+	}
+	p{
+		margin-top: 0px;
+		margin-bottom: 20px;
+	}
+	</style>
+	<style>
+	.subscribe_button {
+	  display: inline-block;
+	  -webkit-box-sizing: content-box;
+	  -moz-box-sizing: content-box;
+	  box-sizing: content-box;
+	  margin: 5px;
+	  cursor: pointer;
+	  padding: 10px 15px;
+	  border: none;
+	  border-radius: 20px;
+	  font: normal normal normal 15px/normal Arial Black, Gadget, sans-serif;
+	  color: #91232A;
+	  background: #ffffff;
+	 ;
+	}
+	</style>
+	
+	<style>
+	ul {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		overflow: hidden;
+		background-color: #91232A;
+	}
+
+	li {
+		float: left;
+	}
+
+	li img {
+		padding: 1px 1px;
+	}
+	li a {
+		display: block;
+		color: white;
+		text-align: center;
+		padding: 15px 15px;
+		text-decoration: none;
+		font: normal normal normal 15px/normal Arial Black, Gadget, sans-serif;
+	}
+	
+	li input:hover:not(.active) {
+		background-color: #A2323B;
+	}
+	li a:hover:not(.active) {
+		background-color: #A2323B;
+	}
+
+	.active {
+		background-color: #4CAF50;
+	}
+	</style>
+	<script language="JavaScript" type="text/javascript">
+		var d=new Date();
+		var monthname=new Array("January","February","March","April","May","June","July","August","September","October","November","December");
+		var TODAY = monthname[d.getMonth()] + " " + d.getDate() + ", " + d.getFullYear();
+	</script>
+</head>
+<body style=""> <!-- Start Fixed Template Info Header -->
+	<div id="header">
+		<div class="navigation">
+			<ul>
+				<li style="margin-left:1%;"><img src="logo/Logo_Glamour_white-02.png" alt="Glamour Logo" height="48" width="124" ALIGN=CENTER></li>
+				<li style="margin-left:10%;"><a href="#fashion">FASHION</a></li>
+				<li style="margin-left:3%;"><a href="#beauty">BEAUTY</a></li>
+				<li style="margin-left:3%;"><a href="#loveandlife">LOVE&LIFE</a></li>
+				<li style="margin-left:3%;"><a href="#culture">CULTURE</a></li>
+				<li style="float:right; margin-right:3%;"><img src="images/Icon_search.png" alt="Search" height="46" width="46" ALIGN=CENTER></li>
+				<li style="float:right; margin-right:2%;"><input type="button" class="subscribe_button" value="SUBSCRIBE" /></li>
+			</ul>
+		</div>
+	</div>
+	
+	<div id="content">
+		<header>
+			<h2 style="color:black; font-family:Didot; font-size:70px; text-align:center;">-- Latest News --</h2>
+			<p style="color:gray; font-family:Arial; font-size:20px; text-align:center;"><script language="JavaScript" type="text/javascript">document.write(TODAY);</script></p>
+		</header>
+		<br>
+		<br>
+		<div id="content_1">
+			<a><img src="images/F_4.png" alt="Content 1" style="margin-left:4%; width:500px; high:250px"></a>
+		</div>
+		<br>
+		<div id="content_2">
+			<a><img src="images/F_3.png" alt="Content 2" style="margin-left:4%; width:500px; high:250px"></a>
+		</div>
+		<br>
+		<div id="content_3">
+			<a><img src="images/F_2.png" alt="Content 3" style="margin-left:10%; width:800px; high:400px"></a>
+		</div>
+		<br>
+		<div id="content_4">
+			<a><img src="images/Cul_3.png" alt="Content 4" style="margin-left:4%; width:500px; high:250px"></a>
+		</div>
+		<br>
+		<div id="content_5">
+			<a><img src="images/Cul_1.png" alt="Content 5" style="margin-left:4%; width:500px; high:250px"></a>
+		</div>
+	</div>
+</body>
+</html>
