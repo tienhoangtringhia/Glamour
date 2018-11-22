@@ -3,6 +3,30 @@
 	<meta charset="UTF-8">
 	<title>Glamour</title>
 	<style>
+	.standard_content {
+		text-align: left;
+		background-color: white;
+	}
+	.p_title {
+		float: left;
+		color: black;
+		padding: 1px 1px;
+		text-decoration: none;
+	}
+	.p_title_content {
+		color: black;
+		text-decoration: none;
+		font: normal bold normal 26px/normal VNI-Helve Black, sans-serif;
+	}
+	.p_title_audit {
+		color: gray;
+		padding-top: 25px;
+		padding-bottom: 25px;
+		text-decoration: none;
+		font: normal bold normal 20px/normal VNI-Helve Black, sans-serif;
+	}
+	</style>
+	<style>
 	body {
 		background-color: white;
 		color: black;
@@ -14,6 +38,12 @@
 		margin-top: 0px;
 		margin-bottom: 20px;
 	}
+	article {
+    float: left;
+    padding: 10px;
+    width: 100%;
+    background-color: white;
+}
 	</style>
 	<style>
 	.subscribe_button {
@@ -26,7 +56,7 @@
 	  padding: 10px 15px;
 	  border: none;
 	  border-radius: 20px;
-	  font: normal normal normal 15px/normal Arial Black, Gadget, sans-serif;
+	  font: normal normal normal 15px/normal Arial Black, sans-serif;
 	  color: #91232A;
 	  background: #ffffff;
 	 ;
@@ -55,7 +85,7 @@
 		text-align: center;
 		padding: 15px 15px;
 		text-decoration: none;
-		font: normal normal normal 15px/normal Arial Black, Gadget, sans-serif;
+		font: normal normal normal 15px/normal Arial Black, sans-serif;
 	}
 	
 	li input:hover:not(.active) {
@@ -69,13 +99,28 @@
 		background-color: #4CAF50;
 	}
 	</style>
+	<style>
+	.footer {
+		background: black;
+		margin-left:0%
+	}
+	</style>
+	<style>
+		.vertical_line {
+			border-left: 4px solid #A2323B;
+			padding-right: 5px;
+			height: 30px;
+			top: 0;
+		}
+	</style>
 	<script language="JavaScript" type="text/javascript">
 		var d=new Date();
-		var monthname=new Array("January","February","March","April","May","June","July","August","September","October","November","December");
-		var TODAY = monthname[d.getMonth()] + " " + d.getDate() + ", " + d.getFullYear();
+		var monthname=new Array("JANUARY","FEBRUARY","MARCH","APRIL","MAY","JUNE","JULY","AUGUST","SEPTEMBER","OCTOBER","NOVEMBER","DECEMBER");
+		var dayname=new Array("MONDAY","TUESDAY","WEDNESDAY","THURSDAY","FRIDAY","SATURDAY","SUNDAY");
+		var TODAY = dayname[d.getDay()] + ", " +monthname[d.getMonth()] + " " + d.getDate() + ", " + d.getFullYear();
 	</script>
 </head>
-<body style=""> <!-- Start Fixed Template Info Header -->
+<body style=""> 
 	<div id="header">
 		<div class="navigation">
 			<ul>
@@ -97,25 +142,82 @@
 		</header>
 		<br>
 		<br>
-		<div id="content_1">
-			<a><img src="images/F_4.png" alt="Content 1" style="margin-left:4%; width:500px; high:250px"></a>
-		</div>
-		<br>
-		<div id="content_2">
-			<a><img src="images/F_3.png" alt="Content 2" style="margin-left:4%; width:500px; high:250px"></a>
-		</div>
-		<br>
-		<div id="content_3">
+		<div class="standard_content">
+			<article style="margin-left:5%;">
+			<a><img src="images/F_4.png" align="left" alt="Content 1" style="width:500px; high:250px;"></a>
+				<p class="p_title" style="margin-left:1%;">
+					<a class="p_title_content">10 Rainboots</a><br>
+					<a class="p_title_content">You'll Want To</a><br>
+					<a class="p_title_content">Wear Even When</a><br>
+					<a class="p_title_content">It's Not Pouring</a><br>
+					<br>
+					<a class="vertical_line">   </a>
+					<a class="p_title_audit" style="line-height:200%;">F A S H I O N</a><br> 
+					<a class="p_title_audit" style="line-height:200%;">1 hour ago</a><br> 
+					<a class="p_title_audit" style="line-height:200%;">by Alex Frank</a><br>  
+				</p>
+			</article>
+			<br>
+			<article style="margin-left:5%;">
+			<a><img src="images/F_3.png" align="left" alt="Content 2" style="width:500px; high:250px;"></a>
+				<p class="p_title" style="margin-left:1%;">
+					<br>
+					<a class="p_title_content">Ladies and Gentlemen,</a><br>
+					<a class="p_title_content">the Talented Mr. Ronson</a><br>
+					<br>
+					<a class="vertical_line">   </a>
+					<a class="p_title_audit" style="line-height:200%;">F A S H I O N</a><br> 
+					<a class="p_title_audit" style="line-height:200%;">2 hours ago</a><br> 
+					<a class="p_title_audit" style="line-height:200%;">by Michelle Ruiz</a><br>  
+				</p>
+			</article>
+			
+		
+		<article style="margin-left:5%;">
 			<a><img src="images/F_2.png" alt="Content 3" style="margin-left:10%; width:800px; high:400px"></a>
+		</article>
+		<br>
+		<article style="margin-left:5%;">
+			<a><img src="images/Cul_3.png" align="left" alt="Content 4" style="width:500px; high:250px;"></a>
+			<p class="p_title" style="margin-left:1%;">
+				<a class="p_title_content">All For Love: Japan's</a><br>
+				<a class="p_title_content">Princess Ayako Weds</a><br>
+				<a class="p_title_content">Kei Moriya</a><br>
+				<br>
+				<a class="vertical_line">   </a>
+				<a class="p_title_audit" style="line-height:200%;">C U L T U R E</a><br> 
+				<a class="p_title_audit" style="line-height:200%;">3 hours ago</a><br> 
+				<a class="p_title_audit" style="line-height:200%;">by Alex Frank</a><br>  
+			</p>
+		</article>
+		<br>
+		<article style="margin-left:5%;">
+			<a><img src="images/Cul_1.png" align="left" alt="Content 4" style="width:500px; high:250px;"></a>
+			<p class="p_title" style="margin-left:1%;">
+				<a class="p_title_content">Pittsburgh Jewish Leaders</a><br>
+				<a class="p_title_content">to President Trump:</a><br>
+				<a class="p_title_content">Unless You Denounce</a><br>
+				<br>
+				<a class="vertical_line">   </a>
+				<a class="p_title_audit" style="line-height:200%;">C U L T U R E</a><br> 
+				<a class="p_title_audit" style="line-height:200%;">4 hours ago</a><br> 
+				<a class="p_title_audit" style="line-height:200%;">by Florence Johannol</a><br>  
+			</p>
+		</article>
+		<article class="footer" >
+		<center>
+			<img src="logo/Logo_Glamour_white-02.png" alt="Glamour Logo" height="144" width="372">
+			<ul style="background-color: black">
+				<li style="margin-left:35%; font-family:Arial; font-size:12px; text-decoration: underline; text-decoration-color: white; text-decoration-style:solid; padding-right: 10px; padding-left: 10px;"><a href="#about">About</a></li>
+				<li style="margin-left:1%; font-family:Arial; font-size:12px; text-decoration: underline; text-decoration-color: white; text-decoration-style:solid; padding-right: 10px; padding-left: 10px;"><a href="#private_policy">Private Policy</a></li>
+				<li style="margin-left:1%; font-family:Arial; font-size:12px; text-decoration: underline; text-decoration-color: white; text-decoration-style:solid; padding-right: 10px; padding-left: 10px;"><a href="#contact">Contact</a></li>
+			</ul>
+		</center>
+		</article>
 		</div>
 		<br>
-		<div id="content_4">
-			<a><img src="images/Cul_3.png" alt="Content 4" style="margin-left:4%; width:500px; high:250px"></a>
-		</div>
-		<br>
-		<div id="content_5">
-			<a><img src="images/Cul_1.png" alt="Content 5" style="margin-left:4%; width:500px; high:250px"></a>
-		</div>
 	</div>
+</div>
 </body>
+
 </html>
